@@ -1,0 +1,147 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #141E46;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    font-weight: 200;
+    background-color: rgb(248, 178, 86);
+}
+
+.header {
+    text-align: center;
+    padding: 2em 0;
+    color: #c70039; 
+}
+a{
+    text-decoration: none;
+    color: rgba(255, 245, 224, 0.9);
+   font-size: 30px;
+   margin:50px;
+}
+a:hover{
+    background-color:#a20330;
+    border-radius:20px;
+    color:rgba(255, 245, 224, 0.9);
+   }
+nav{
+    background-color:#c70039;
+    padding:20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px;
+    
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    }
+
+.nav {
+    padding: 1em;
+    background-color: rgba(199, 0, 57, 0.8); 
+    color: #FFF5E0;
+}
+
+/* nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFF5E0;
+} */
+
+.main {
+    padding: 20px;
+    color: #141E46;
+}
+
+.about-community, .discussion-forum, .events, .talk-to-expert, .newsletter {
+    margin-bottom: 30px;
+    background-color: rgba(255, 245, 224, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.post, .comment, .event {
+    background-color: #FFF5E0;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border:1px solid black;
+}
+
+.post .user-info, .comment .user-info {
+    color: #C70039;
+}
+
+.comment-input, .new-post-form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    
+}
+
+.comment-button, .talk-to-expert button, .newsletter button, .new-post-button {
+    background-color: #C70039;
+    color: #FFF5E0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.comment-button:hover, .talk-to-expert button:hover, .newsletter button:hover, .new-post-button:hover {
+    background-color: #FF6969;
+}
+
+.sorting-bar {
+    margin-bottom: 20px;
+}
+
+.sorting-bar label {
+    margin-right: 10px;
+}
+
+.sorting-bar select {
+    padding: 5px;
+}
+
+.like-button, .share-button, .comment-button {
+    background-color: #C70039;
+    color: #FFF5E0;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.like-button:hover, .share-button:hover, .comment-button:hover {
+    background-color: #FF6969;
+}
+
+.footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: rgba(44, 62, 80, 0.8);
+    color: #FFF5E0;
+}

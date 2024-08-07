@@ -1,0 +1,99 @@
+body{
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    font-weight: 200;
+    background-color: rgb(248, 178, 86);
+
+      align-items: center;
+       justify-content: center; 
+      
+       margin: 0;
+}
+
+nav{
+    background-color:#c70039;
+    padding:20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px;
+    
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    }
+    header {
+   
+        text-align: center;
+        padding: 2em 0;
+        color: #c70039;
+         
+        
+       
+    }
+
+.form{
+    background-color: rgba(255, 245, 224, 0.9);
+    width: 400px; 
+    padding:50px;
+    border: 1px solid black;
+    margin: 10px auto; 
+    border-radius: 50px;
+    align-content: center;
+
+}
+.heading{
+    text-align: center;
+    align-content: center;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  ;
+}
+a{
+    font-size: 30px;
+    
+    width:200px;
+    height:60px;
+    text-align: center;
+    font-weight: 200;
+    
+    text-decoration: none;
+    color:rgba(255, 245, 224, 0.9);
+    margin:50px;
+  
+}
+a:hover{
+    background-color:#a20330;
+    border-radius:20px;
+    color:rgba(255, 245, 224, 0.9);
+   }
+.members{
+   font-size: 20px;
+   text-align:center;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.btn{
+    background-color: #c70039;
+    padding:6px;
+    border:none;
+    cursor:pointer;
+    border-radius: 20px;
+    color: rgba(255, 245, 224, 0.9);
+    width:80px;
+    height:40px;
+    
+}
+button:hover{
+    background-color: #a20330;
+    color: rgba(255, 245, 224, 0.9);
+}
+.submit{
+    margin:30px;
+    text-align: center;
+    font-size: 30px;
+}
+input[type=text] ,input[type=date] ,input[type=number], input[type=email], input[type=tel],textarea {
+   border: 1px solid black;
+      border-radius: 4px;
+ }

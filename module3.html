@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz</title>
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/originals/db/34/d4/db34d40b271fb59477621550bf73ea0b.jpg');
+            background-size: cover;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color:white;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            background-color: #ffffff;
+            font-weight: 500;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-decoration: double;
+            border-radius: 50px;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .question {
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    
+        .options {
+            text-align: left;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .option {
+            margin-bottom: 10px;
+        }
+    
+        .option input {
+            margin-right: 10px;
+        }
+    
+        .submit-btn {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        score{
+            text-shadow: yellowgreen;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1><u>Quiz Time!</u></h1>
+<div class="quiz-container">
+<div class="question">1. Which age group is protected under Child Protection Rights?</div>
+<ul class="options">
+    <li class="option"><label><input type="radio" name="q1" value="0-12yrs"> 0-12yrs</label></li>
+    <li class="option"><label><input type="radio" name="q1" value="12-18yrs"> 12-18yrs</label></li>
+    <li class="option"><label><input type="radio" name="q1" value="0-18yrs"> 0-18yrs</label></li>
+    <li class="option"><label><input type="radio" name="q1" value="12-15yrs"> 12-15yrs</label></li>
+</ul>
+
+<div class="question">2. What you should NOT do when you feel your rights are violated?</div>
+<ul class="options">
+    <li class="option"><label><input type="radio" name="q2" value="Do not talk to people about how you feel">Do not talk to people about how you feel</label></li>
+    <li class="option"><label><input type="radio" name="q2" value="Tell someone you trust">Tell someone you trust </label></li>
+    <li class="option"><label><input type="radio" name="q2" value="Stay safe"> Stay safe, avoid situations where you feel uncomfortable</label></li>
+    <li class="option"><label><input type="radio" name="q2" value="Contact Help Organisations"> Contact Help Organisations</label></li>
+</ul>
+
+<div class="question">3. Which of the following are Child Rights?</div>
+<ul class="options">
+    <li class="option"><label><input type="radio" name="q3" value="Right to Education">Right to Education</label></li>
+    <li class="option"><label><input type="radio" name="q3" value="Right against Discrimination">Right against Discrimination </label></li>
+    <li class="option"><label><input type="radio" name="q3" value="Right to Participation">Right to Participation</label></li>
+    <li class="option"><label><input type="radio" name="q3" value="All of the above"> All of the above</label></li>
+</ul>
+
+<div class="question">4.What is the right of every child to have a name and nationality?</div>
+<ul class="options">
+    <li class="option"><label><input type="radio" name="q4" value="Right to Education">Right to Education</label></li>
+    <li class="option"><label><input type="radio" name="q4" value="Right to Identity">Right to Identity </label></li>
+    <li class="option"><label><input type="radio" name="q4" value="Right to Participation">Right to Participation</label></li>
+    <li class="option"><label><input type="radio" name="q4" value="Right to Play"> Right to Play</label></li>
+</ul>
+
+<div class="question">5. What does the right to health ensure for every child?</div>
+<ul class="options">
+    <li class="option"><label><input type="radio" name="q5" value="Right to Eat Junk Food">Right to Eat Junk Food</label></li>
+    <li class="option"><label><input type="radio" name="q5" value="Right to Sleep All Day">Right to Sleep All Day </label></li>
+    <li class="option"><label><input type="radio" name="q5" value="Right to Good Health">Right to Good Health</label></li>
+    <li class="option"><label><input type="radio" name="q5" value="Right to Skip Vaccinations"> Right to Skip Vaccinations</label></li>
+</ul>
+
+
+<button class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+<br>
+        
+    </div>
+
+    <script>
+        let score = 0;
+
+        function submitQuiz() {
+            const correctAnswers = ['0-18yrs', 'Do not talk to people about how you feel', 'All of the above', 'Right to Identity', 'Right to Good Health'];
+
+            for (let i = 1; i <= correctAnswers.length; i++) {
+                const selectedAnswer = document.querySelector(input[name="q${i}"],checked);
+
+                if (selectedAnswer) {
+                    if (selectedAnswer.value === correctAnswers[i - 1]) {
+                        score++;
+                    }
+                }
+            }
+
+            // Display the score
+            document.getElementById('score').innerHTML = 'Score: ' + score;
+
+            // Optionally, you can show an alert or customize the message based on the score
+            alert('Quiz submitted! Your score: ' + score);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Play and Learn </h1>
+        <p>Where learning meets adventure</p>
+    </header>
+    <nav> 
+       <a href="homepage.html" class="home"> HOME</a>
+       <a href="community_page.html" class="community"> COMMUNITY</a>
+       <a href="#" class="ga"> GAMES</a>
+       <a href="index.html" class="module"> MODULES</a>
+       <a href="help.html" class="help"> HELP</a>
+    </nav>
+    
+    
+    <div class="games">
+    <div class="game1">
+        
+         <h1>QUIZ IT UP</h1>
+         <img src="quiz it up.jpg"class="1" height="300px" width="300px">
+         <p>Gear up for the ultimate brain battle in "Quiz It Up!" Take on the interactive quiz bot,
+            answer fun questions about your rights, and earn points like a quiz champion. It's quiz time, superhero style! Show off your knowledge to your friends!</p>
+            <div class="button">
+            <h4>PLAY NOW!</h4>
+            <script>
+                window.addEventListener('mouseover', initLandbot, { once: true });
+                window.addEventListener('touchstart', initLandbot, { once: true });
+                var myLandbot;
+                function initLandbot() {
+                  if (!myLandbot) {
+                    var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+                    s.addEventListener('load', function() {
+                      myLandbot = new Landbot.Popup({
+                        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2110293-MVIUBGPW27O5UQTF/index.json',
+                      });
+                    });
+                    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                    var x = document.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                  }
+                }
+                </script>
+        </div>
+       
+    </div>
+    <div class="game2">
+       
+        <h1>JUSTICE LEAGUE</h1>
+        <img src="justice league.jpg" class="2"height="300px" width="300px">
+        <p>Join forces with friends in "Justice League"! Work together as a team to solve problems
+             related to children's rights. Each player is like a superhero, representing different parts
+              of the law. Team up for justice, laughter, and super-fun teamwork!</p>
+              <div class="button">
+                <h4>PLAY NOW!</h4>
+            </div>
+           
+   </div>
+   <div class="game3">
+    
+    <h1>RIGHTS QUEST</h1>
+    <img src="rights quest.jpg" class="3" height="300px" width="300px">
+    <p>Embark on an epic adventure in "Rights Quest"! Dive into cool challenges, solve puzzles, and make
+         choices to discover and protect your rights. Be the hero of your own story while
+          learning about important stuff that makes you a super-kid!</p>
+          <div class="button">
+            <h4>PLAY NOW!</h4>
+        </div>
+      
+</div>
+
+
+<!-- <div class="game4">
+   
+    <h1>RIGHTS DEFENDER</h1>
+    <img src="rights defender.jpg"class="4" height="300px" width="300px">
+    <p>Suit up and become a superhero in "Rights Defender"! Make smart choices to protect the rights of 
+        virtual friends, tackle challenges, and feel the power of doing what's right. Get ready for a 
+        superhero journey that's all about justice and fun!</p>
+        <h4>PLAY NOW!</h4>
+
+</div>
+<div class="game5">
+    <h1>BUILD YOUR STORY</h1>
+    <img src="build your story.jpg"class="5" height="300px" width="300px">
+    <p>Jump into thrilling stories in "Build Your Story" where YOU control the action! Face real-life
+         situations about children's rights, make choices, and shape the story. It's like being the director 
+         of your own blockbuster movie filled with adventure and life lessons!</p>
+         <h4>PLAY NOW!</h4>
+        </div> -->
+    
+
+
+</div>
+</body>
+</html>
